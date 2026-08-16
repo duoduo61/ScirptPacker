@@ -1,6 +1,6 @@
 # ScriptPacker
 
-**ScriptPacker** 是一个简单易用的 Python 脚本打包工具，提供命令行和图形界面两种操作方式。它能自动分析脚本的导入依赖，并调用 PyInstaller 生成独立的可执行文件（如 `.exe`）。
+**ScriptPacker** 是一个简单易用的 Python 脚本打包工具，提供命令行和图形界面两种操作方式。它能自动分析脚本的导入依赖，并调用 PyInstaller 生成独立的可执行文件(.exe)
 
 ## 特性
 
