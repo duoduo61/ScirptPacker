@@ -165,7 +165,7 @@ class PackerGUI:
         link_text = self.strings[self.lang]['about_link_text']
         link_lbl = tk.Label(about_win, text=link_text, fg="blue", cursor="hand2", font=("微软雅黑", 10, "underline"))
         link_lbl.pack(pady=5)
-        link_lbl.bind("<Button-1>", lambda e: webbrowser.open("https://github.com/duoduo61/ScriptPacker"))
+        link_lbl.bind("<Button-1>", lambda e: webbrowser.open("https://github.com/duoduo61/ScirptPacker"))
 
         tk.Label(about_win, text=self.strings[self.lang]['about_author'], font=("微软雅黑", 10)).pack(pady=2)
         tk.Label(about_win, text=self.strings[self.lang]['about_license'], font=("微软雅黑", 10)).pack(pady=2)
