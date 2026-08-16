@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scriptpacker"
+version = "1.0.0"
+description = "简单易用的 Python 脚本打包工具 (命令行 + GUI)"
+readme = "README.md"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.7"
+dependencies = [
+    "pyinstaller>=5.0"
+]
+
+[project.scripts]
+pack-script = "packer.cli:main"
+pack-gui = "packer.gui:main"    # 新增 GUI 命令
+
+[project.gui-scripts]            # 用于 Windows 快捷方式（可选）
+pack-gui = "packer.gui:main"
