@@ -56,7 +56,7 @@ pack-script your_script.py -o ./dist -n myapp --onefile --console --add-data "C:
 参数说明：
 
 - `script`：要打包的 Python 脚本路径（必填）
-- `-o, --output-dir`：输出目录（默认 `./dist`）
+- `-o, --output-dir`：输出目录（默认./dist）
 - `-n, --name`：可执行文件名称
 - `--icon`：图标文件路径
 - `--onefile`：打包成单个文件
