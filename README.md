@@ -65,7 +65,7 @@ pack-script your_script.py -o ./dist -n myapp --onefile --console --add-data "C:
 
 ## 附加资源说明
 
-附加资源用于将额外文件或文件夹打包进可执行程序。目标路径是相对于可执行文件运行时的当前目录。例如，`--add-data "config.ini;."` 会将 `config.ini` 放在与可执行文件相同的目录。
+附加资源用于将额外文件或文件夹打包进可执行程序。目标路径是相对于可执行文件运行时的当前目录。例如，--add-data "config.ini;."会将config.ini放在与可执行文件相同的目录。
 
 在 GUI 中，您可以通过“浏览文件...”和“浏览文件夹...”按钮添加，路径会自动以分号连接。
 
