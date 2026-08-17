@@ -47,8 +47,6 @@ python gui.py
 
 ### 命令行（CLI）
 
-bash
-
 ```
 pack-script your_script.py -o ./dist -n myapp --onefile --console --add-data "C:\data\config.ini;." --add-data "C:\images;images"
 ```
