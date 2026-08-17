@@ -5,23 +5,33 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "scriptpacker"
 version = "1.0.0"
-description = "简单易用的 Python 脚本打包工具 (命令行 + GUI)"
+description = "Python 脚本一键打包工具"
 readme = "README.md"
-authors = [{ name = "Your Name", email = "you@example.com" }]
+authors = [
+    { name = "duodduo61", email = "duoduo201311@gmail.com" }
+]
 license = { text = "MIT" }
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta",
+    "Environment :: Win32 (MS Windows)",
+    "Intended Audience :: Developers",
 ]
 requires-python = ">=3.7"
 dependencies = [
-    "pyinstaller>=5.0"
+    "pyinstaller>=5.0",
+    "pillow>=9.0.0",
 ]
 
 [project.scripts]
 pack-script = "packer.cli:main"
-pack-gui = "packer.gui:main"    # 新增 GUI 命令
-
-[project.gui-scripts]            # 用于 Windows 快捷方式（可选）
 pack-gui = "packer.gui:main"
+
+[project.gui-scripts]
+pack-gui = "packer.gui:main"
+
+[tool.setuptools.packages.find]
+include = ["packer*"]
+exclude = ["tests*"]
